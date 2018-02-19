@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-color: limegreen;
+    background-image: url('/img/clock.png');
+}
+
+.main {
+    background-color: #ccc;
+    width: 400px;
+    height: 175px;
+    margin: 120px auto;
+    position: relative;
+    padding: 30px;
+    font-family: 'Play', sans-serif;
+    border-radius: 4px;
+    .badge {
+        width: 96px;
+        position: absolute;
+        top: -15px;
+        left: 40%;
+        background-color: #e66357;
+        color: white;
+        padding: 5px 10px;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 4px;
+    }
+    .clock {
+        background-color: #ebebeb;
+        text-align: center;
+        font-size: 55px;
+        height: 100%;
+        padding-top: 24px;
+        border-radius: 4px;
+    }
 }

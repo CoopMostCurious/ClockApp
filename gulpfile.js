@@ -14,13 +14,13 @@ gulp.task('sass', function() {
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: 'app'
+            baseDir: '/Users/cooper/Desktop/digitalClock/app'
         },
     });
 });
 
 gulp.task('watch', ['browser-sync', 'sass'], function() {
     gulp.watch('app/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload);
+    gulp.watch('app/**/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
